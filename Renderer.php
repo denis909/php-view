@@ -13,6 +13,11 @@ class Renderer
 
     public $viewPath;
 
+    public function __construct($viewPath = null)
+    {
+        $this->viewPath = $viewPath;
+    }
+
     public function getViewPath()
     {
         return $this->viewPath;
