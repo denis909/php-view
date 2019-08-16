@@ -3,7 +3,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "denis909\\micro\\": ""
+            "denis909\\view\\": ""
         }
     }
 }

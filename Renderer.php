@@ -1,12 +1,12 @@
 <?php
 /**
- * @package PHP Micro Framework
+ * @package View
  * @license MIT License
  * @link    http://denis909.spb.ru
  */
-namespace denis909\micro;
+namespace denis909\view;
 
-class View
+class Renderer
 {
 
     use RenderFileTrait;
