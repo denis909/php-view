@@ -13,7 +13,9 @@ echo $content;
 
 ```
 
-### Template Example
+#### Template
+
+`/templates/test.php`
 
 ```
 <h1>top</h1>
