@@ -1,5 +1,9 @@
 # View
 
+## Installation
+
+`composer require denis909/view`
+
 ## Usage
 
 ```
