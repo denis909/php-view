@@ -13,7 +13,7 @@ echo $content;
 
 ```
 
-#### Test template
+### Template Example
 
 ```
 <h1>top</h1>
@@ -23,9 +23,9 @@ echo $content;
 <p>bottom</p>
 ```
 
-#### Advanced usage
+## Advanced Usage
 
-You can render any file outside templates directory.
+You can render any file outside templates directory:
 
 ```
 $content = $renderer->renderFile(__DIR__ . '/templates2/test.php', ['param1' => 'value 1']);
