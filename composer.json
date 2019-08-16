@@ -1,5 +1,5 @@
 {
-    "name": "denis909/micro-view",
+    "name": "denis909/view",
     "license": "MIT",
     "autoload": {
         "psr-4": {
