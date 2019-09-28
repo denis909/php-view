@@ -1,8 +1,7 @@
 <?php
 /**
- * @package View
- * @license MIT License
- * @link    http://denis909.spb.ru
+ * @author denis909
+ * @license MIT
  */
 namespace denis909\view;
 
@@ -11,21 +10,21 @@ abstract class Renderer
 
     use RenderFileTrait;
 
-    public $viewPath;
+    protected $_config;
 
-    public function __construct($viewPath = null)
+    public function __construct(Config $config)
     {
-        $this->viewPath = $viewPath;
+        $this->_config = $config;
     }
 
-    public function getViewPath()
+    public function getTemplatesPath()
     {
-        return $this->viewPath;
+        return $this->_config->templatesPath;
     }
 
     public function render($template, $params = [])
     {
-        $filename = $this->getViewPath() . '/' . $template . '.php';
+        $filename = $this->getTemplatesPath() . '/' . $template . '.php';
 
         return $this->renderFile($filename, $params);
     }
