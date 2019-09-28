@@ -6,7 +6,7 @@
  */
 namespace denis909\view;
 
-class Renderer
+abstract class Renderer
 {
 
     use RenderFileTrait;

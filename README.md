@@ -7,11 +7,11 @@
 ## Usage
 
 ```
-use denis909\view\Renderer;
+use denis909\view\View;
 
-$renderer = new Renderer(__DIR__ . '/templates'); // create renderer instance
+$view = new View(__DIR__ . '/templates'); // create renderer instance
 
-$content = $renderer->render('test', ['param1' => 'value 1']); // render template to string
+$content = $view->render('test', ['param1' => 'value 1']); // render template to string
 
 echo $content;
 
@@ -24,17 +24,17 @@ echo $content;
 ```
 <h1>top</h1>
 
-<?= $param1;?>
+<?= $this->escape($param1);?>
 
 <p>bottom</p>
 ```
 
 ## Advanced Usage
 
-You can render any file outside templates directory:
+You can render files outside templates directory:
 
 ```
-$content = $renderer->renderFile(__DIR__ . '/templates2/test.php', ['param1' => 'value 1']);
+$content = $view->renderFile(__DIR__ . '/templates2/test.php', ['param1' => 'value 1']);
 
 echo $content; 
 ```
